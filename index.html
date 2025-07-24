@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IDN CAMP</title>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Tautan ke file CSS eksternal -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- HEADER / NAVBAR -->
+    <header class="header" id="main-nav">
+        <nav class="container nav">
+            <a href="#" class="nav-logo">
+                <i class="fas fa-campground"></i> IDN CAMP
+            </a>
+            <div class="nav-links-desktop">
+                <a href="#tentang" class="nav-link">Tentang</a>
+                <a href="#materi" class="nav-link">Materi</a>
+                <a href="#galeri" class="nav-link">Galeri</a>
+                <a href="#daftar" class="btn btn-primary">Daftar</a>
+            </div>
+            <!-- Tombol Menu Mobile -->
+            <button id="mobile-menu-btn" class="nav-toggle" aria-label="Buka menu">
+                <svg id="icon-menu" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+                <svg id="icon-close" class="hidden" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+            </button>
+        </nav>
+    </header>
+    
+    <!-- Menu Mobile (dipisah dari header) -->
+    <div class="nav-menu" id="nav-menu">
+        <a href="#tentang" class="nav-link">Tentang</a>
+        <a href="#materi" class="nav-link">Materi</a>
+        <a href="#galeri" class="nav-link">Galeri</a>
+        <a href="#daftar" class="btn btn-primary">Daftar</a>
+    </div>
+
+    <!-- Bagian 1: Kontainer untuk animasi scrollytelling -->
+    <div id="scrolly-container">
+        <div id="scrolly-canvas">
+            <!-- Adegan 1: Halaman Depan dengan Pemandangan -->
+            <div id="hero-scene" class="scrolly-scene">
+                <!-- Konten Hero -->
+                <div id="hero-content">
+                    <h1>
+                        Belajar Ilmu IT bareng Alam
+                    </h1>
+                    <p>BY IT CAMP GRUP AND IDN ADVENTURE</p>
+                </div>
+            </div>
+            <!-- Adegan 2: Ruangan dengan Video Player -->
+            <div id="feature-scene" class="scrolly-scene">
+                <!-- Placeholder untuk video YouTube -->
+                <div id="video-placeholder" class="video-placeholder" data-youtube-id="x4_BypXLnTw">
+                    <div class="play-button-wrapper">
+                        <div class="play-button"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bagian 2: Konten reguler IDN CAMP setelah animasi -->
+    <div id="regular-content">
+        <!-- Tentang IDN CAMP -->
+        <section id="tentang" class="section">
+            <div class="container text-center">
+                <h2 class="section-title">Selamat Datang di IDN CAMP</h2>
+                <p class="section-subtitle">Program Edukasi Berbasis Alam Terbuka Yang Menggabungkan Kegiatan Eksplorasi Dengan Pembelajaran Teknologi Modern.</p>
+                <div class="grid grid-cols-3">
+                    <div class="card feature-card">
+                        <i class="fas fa-seedling card-icon"></i>
+                        <h3 class="card-title">Inspiratif</h3>
+                        <p>Temukan inspirasi baru dari alam untuk setiap baris kode dan desain yang Anda buat.</p>
+                    </div>
+                    <div class="card feature-card">
+                        <i class="fas fa-users card-icon"></i>
+                        <h3 class="card-title">Kolaboratif</h3>
+                        <p>Bangun proyek bersama teman-teman baru di sekitar api unggun, bukan di ruang rapat.</p>
+                    </div>
+                    <div class="card feature-card">
+                        <i class="fas fa-drafting-compass card-icon"></i>
+                        <h3 class="card-title">Praktis</h3>
+                        <p>Fokus pada studi kasus nyata dan proyek yang bisa langsung Anda masukkan ke portofolio.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Materi Pembelajaran -->
+        <section id="materi" class="section bg-white">
+            <div class="container text-center">
+                <h2 class="section-title">Materi Pembelajaran</h2>
+                <p class="section-subtitle">Pilih jalur yang paling sesuai dengan minat dan tujuan karir Anda.</p>
+                <div class="grid grid-cols-3">
+                    <div class="card materi-card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCIcCTBBt_iuSKsEUb8QKK-RtLsf47dfy_Pw&s">
+                        <div class="card-body">
+                            <h3 class="card-title">UI/UX Design</h3>
+                            <p>Merancang pengalaman pengguna yang intuitif dan antarmuka yang memukau.</p>
+                        </div>
+                    </div>
+                    <div class="card materi-card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCIcCTBBt_iuSKsEUb8QKK-RtLsf47dfy_Pw&s">
+                        <div class="card-body">
+                            <h3 class="card-title">Software Development</h3>
+                            <p>Membangun aplikasi web fungsional dengan teknologi front-end dan back-end.</p>
+                        </div>
+                    </div>
+                    <div class="card materi-card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCIcCTBBt_iuSKsEUb8QKK-RtLsf47dfy_Pw&s">
+                        <div class="card-body">
+                            <h3 class="card-title">Networking</h3>
+                            <p>Memahami tulang punggung internet dan cara mengelola infrastruktur jaringan.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Galeri Kegiatan (Parallax) -->
+        <section id="galeri" class="parallax-bg">
+            <div class="parallax-overlay">
+                <div class="container text-center">
+                    <h2 class="section-title text-white">Galeri Kegiatan</h2>
+                    <div class="grid grid-cols-4">
+                        <img src="https://asset-a.grid.id/crop/4x372:863x1087/x/photo/2023/08/09/api-unggunjpeg-20230809123852.jpeg" alt="Gambar diskusi outdoor" class="gallery-img">
+                        <img src="https://asset-a.grid.id/crop/4x372:863x1087/x/photo/2023/08/09/api-unggunjpeg-20230809123852.jpeg" alt="Gambar coding di tenda" class="gallery-img">
+                        <img src="https://asset-a.grid.id/crop/4x372:863x1087/x/photo/2023/08/09/api-unggunjpeg-20230809123852.jpeg" alt="Gambar api unggun" class="gallery-img">
+                        <img src="https://asset-a.grid.id/crop/4x372:863x1087/x/photo/2023/08/09/api-unggunjpeg-20230809123852.jpeg" alt="Gambar hiking" class="gallery-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Formulir Pendaftaran -->
+        <section id="daftar" class=" text-white">
+            <div class="container text-center">
+                <h2 class="section-title">Amankan Tempatmu!</h2>
+                <p class="section-subtitle">Isi formulir di bawah ini untuk mendapatkan informasi lebih lanjut.</p>
+                <div class="form-container">
+                    <form>
+                        <input type="text" placeholder="Nama Lengkap" class="form-input">
+                        <input type="email" placeholder="Alamat Email" class="form-input">
+                        <input type="tel" placeholder="Nomor WhatsApp" class="form-input">
+                        <select class="form-input">
+                            <option disabled selected>Pilih Bidang Peminatan</option>
+                            <option>UI/UX Design</option>
+                            <option>Software Development</option>
+                            <option>Networking</option>
+                        </select>
+                        <button type="submit" class="btn btn-secondary full-width">Kirim Minat</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <h3 class="footer-logo"><i class="fas fa-campground"></i> IDN CAMP</h3>
+                <p class="copyright">Copyright &copy; 2025 IDN CAMP BY SAIF INDONESIA. <br> All rights reserved</p>
+                <div class="social-links">
+                    <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4 class="footer-heading">Company</h4>
+                <ul>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Testimonials</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact us</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4 class="footer-heading">Support</h4>
+                <ul>
+                    <li><a href="#">Help center</a></li>
+                    <li><a href="#">Terms of service</a></li>
+                    <li><a href="#">Legal</a></li>
+                    <li><a href="#">Privacy policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-subscribe">
+                <h4 class="footer-heading">Stay up to date</h4>
+                <form class="subscribe-form">
+                    <input type="email" placeholder="Your email address">
+                    <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Tautan ke file JavaScript eksternal -->
+    <script src="script.js"></script>
+</body>
+</html>
